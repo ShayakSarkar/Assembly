@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+
+import os,sys
+msg="nasm -f elf32 "+sys.argv[1]+" -o object.o -F DWARF -g"
+os.system(msg)
+msg="ld -m elf_i386 object.o -o a.out"
+os.system(msg)
+os.system("rm object.o")
+

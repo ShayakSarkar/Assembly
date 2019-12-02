@@ -1,0 +1,4 @@
+#!/bin/bash
+nasm -f elf32 -F dwarf -g test1.asm
+ld test1.o
+
