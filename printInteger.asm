@@ -22,7 +22,7 @@ section .text
 	
 		ret
 	_start:
-		mov eax,123
+		mov eax,12
 		call _printInteger
 		mov eax,1
 		mov ebx,0
